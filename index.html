@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box{
+        padding: 10px;
+    }
+    .rotatenone:checked~div{
+        transform: rotate(none);
+    }
+
+    .rotate:checked~div{
+        transform: rotate(45deg);
+    }
+    .rotate90:checked~div{
+        transform: rotate(90deg);
+    }
+    .rotate180:checked~div{
+        transform: rotate(180deg);
+    }
+    .rotatex45:checked~div{
+        transform: rotateX(45deg);
+    }
+    .rotatex70:checked~div{
+        transform: rotateX(70deg);
+    }
+    .rotatey45:checked~div{
+        transform: rotateY(45deg);
+    }
+    .rotatey70:checked~div{
+        transform: rotateY(70deg);
+    }
+    .sk20:checked~div{
+        transform: skew(20deg,20deg);
+    }
+    .sk30:checked~div{
+        transform: skew(30deg,30deg);
+    }
+    .skx30:checked~div{
+        transform: skewX(30deg)
+    }
+    .skx40:checked~div{
+        transform: skewX(40deg)
+    }
+    .sky30:checked~div{
+        transform: skewY(30deg)
+    }
+    .sky40:checked~div{
+        transform: skewY(40deg)
+    }
+    .sc1:checked~div{
+        transform: scale(2,2)
+    }
+    .sc2:checked~div{
+        transform: scale(2,3)
+    }
+    .mat1:checked~div{
+        transform: matrix(0.866,0.7,-0.8,0.866,0,0)
+    }
+    .mat2:checked~div{
+        transform: matrix(0.586,0.7,-0.8,0.586,0,0)
+    }
+    .cd{
+        border: 2px solid black;
+        display: flex; flex-direction: column;
+        background-color: blueviolet;
+        width: 1400px;
+    }
+    .box{
+        position: absolute; left: 1000px;
+        bottom: 280px;
+    }
+    
+
+ 
+    
+   
+</style>
+
+
+<body>
+    <div class="cd" >
+    <input type="radio" class="rotatenone">rotate (none)
+   
+    <input type="radio" class="rotate" name="transforms">rotate (45deg)
+    
+    <input type="radio" class="rotate90">rotate (90deg)
+    
+    <input type="radio" class="rotate180">rotate (180deg)
+    
+    <input type="radio" class="rotatex45">rotate x (45 deg)
+    
+    <input type="radio" class="rotatex70">rotate x(70deg)
+    
+    <input type="radio" class="rotatey45">rotate Y(45deg)
+    
+    <input type="radio" class="rotatey70">rotate Y (70deg)
+    
+    <input type="radio" class="sk20">skew (20deg,20deg)
+    
+    <input type="radio" class="sk30">skew (30deg,30deg)
+    
+    <input type="radio" class="skx30">skew X (30deg)
+   
+    <input type="radio" class="skx40">skew X (40deg)
+    
+    <input type="radio" class="sky30">skew Y(30deg)
+    
+    <input type="radio" class="sky40">skewY (40deg)
+    
+    <input type="radio" class="sc1">scale(2,2)
+    
+    <input type="radio" class="sc2">scale(2,3)
+    
+    <input type="radio" class="mat1">matrix(0.866,0.7,-0.8,0.866,0,0)
+    
+    <input type="radio" class="mat2">matrix(0.586,0.7,-0.8,0.586,0,0)
+    <div class="box" name="transforms" style="border: 1px solid black; height: 250px ; width: 170px; background-color: aquamarine;"> <img src="../asstes/images/bheem.jpg" width="170" height="250"></div>
+    
+</div>
+    
+
+    
+</body>
+</html>
